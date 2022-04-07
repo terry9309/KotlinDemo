@@ -9,8 +9,6 @@ fun main() {
     val nameL = "terry-val"
 
 
-
-
     /**
      * Kotlin  中的内置数据类型：
      *     1.String  字符串
