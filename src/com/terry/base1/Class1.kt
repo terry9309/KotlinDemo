@@ -1,10 +1,14 @@
 package com.terry.base1
 
 
+
+const val  PI = 3.14  //1。编译时常量 const不适用于 局部变量
+
+
 fun main() {
 
 
-    //变量声明：var 可读可改   val:只读   默认会进行数据类型推导
+    //2.变量声明：var 可读可改   val:只读   默认会进行数据类型推导（ 局部变量 ）
     var nameR = "terry"
     val nameL = "terry-val"
 
