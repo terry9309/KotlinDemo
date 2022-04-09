@@ -45,7 +45,14 @@ fun main() {
     println("我${if (goHome)"现在回家了" else "现在还没回家"}")
 
 
+    /**
+     *  4. 函数的定义
+     */
+    method("Terry",19)
+
+}
 
 
-
+fun method(name:String,age:Int){
+    println("我叫$name,我今年${age}岁")
 }
