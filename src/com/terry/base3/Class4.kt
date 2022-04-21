@@ -13,7 +13,6 @@ fun main() {
             "A"-> "1"
             "D"-> "2"
             "H"-> "3"
-
             else ->
                 it.value
 
@@ -22,7 +21,7 @@ fun main() {
     }
 
     println(newPsw)
-    //replace : 解密
+     //replace : 解密
     val  originPswNew = newPsw.replace(Regex("[1,2,3]")){
         when(it.value){
             "1" -> "A"
@@ -31,7 +30,6 @@ fun main() {
             else -> it.value
         }
     }
-
 
     println(originPswNew)
 }

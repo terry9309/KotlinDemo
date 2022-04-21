@@ -7,8 +7,7 @@ fun main() {
      *  lambda
      */
 
-    val add = {
-            num1:Int,num2:Int ->
+    val add = { num1:Int,num2:Int ->
         "结果为：${num1+num2}"
     }
 

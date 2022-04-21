@@ -30,11 +30,11 @@ fun main() {
      */
     var name4: String? = null
     name4 = ""
-    val re = name4?.let {
+    val re = name4?.let { //name4 不为null 时会执行后面的let 函数
         if (it.isBlank()) {    //判断是不是空字符串
-            "默认值"
+            "默认值"            //返回定义的默认值
         } else {
-            it
+            it                 //返回name4 本身
         }
     }
     println(re)
@@ -53,7 +53,7 @@ fun main() {
     /**
      *  空合并操作符 ?:
      */
-    var  name6:String?="James"
+    var  name6:String?=null
     println(name6?:"NBA")
     /**
      *  let +  空合并操作符

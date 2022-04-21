@@ -24,7 +24,7 @@ fun main(){
 
 
     //解构
-    val(v1,v2,v3) =list
+    val(v1,v2,v3) =list          //注意此处，参数的个数需要与list 的长的对应 ，否则会报索引异常
     println("v1:$v1,v2:$v2,v3:$v3") //解构之后的结果
 
 
