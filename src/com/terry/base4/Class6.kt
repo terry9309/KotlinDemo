@@ -41,11 +41,25 @@ fun main() {
      *  map 的遍历
      */
 
+    //方式一：
     map1.forEach{
         //it  == Entry
         println("key: ${it.key},value: ${it.value}")
     }
 
+    println()
+
+    //方式二：
+    map1.forEach{
+        key,value ->
+        println("key: ${key},value: ${value}")
+    }
+
+    //方式三：
+    map1.forEach{
+            (key,value)->
+        println("key: ${key},value: ${value}")
+    }
 
 
 }
