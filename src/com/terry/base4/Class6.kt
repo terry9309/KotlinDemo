@@ -8,7 +8,10 @@ package com.terry.base4
 fun main() {
 
 
-    //map 的声明1
+    /**
+     * map 的声明
+     */
+    //声明1：
     var map1: Map<String, Double> = mapOf<String, Double>("JAMES" to 37.5, "CURRY" to 34.5)
 
 
@@ -55,11 +58,47 @@ fun main() {
         println("key: ${key},value: ${value}")
     }
 
+    println()
+
     //方式三：
     map1.forEach{
             (key,value)->
-        println("key: ${key},value: ${value}")
+        println("key: ${key},value: $value")
     }
+
+
+    //方式四
+    for (item in map1){
+        println("key: ${item.key},value: ${item.value}")
+    }
+
+
+    /**
+     * 可变Map
+     */
+    val map3 = mutableMapOf<String, String>("JAMES" to "湖人", "CURRY"  to "勇士")
+
+    //添加1
+    map3 += "Paul" to "太阳"
+    //移除
+    map3 -= "CURRY"
+    println(map3)
+
+    //添加2
+    map3["HADUN"] = "75人"
+    println(map3)
+
+
+    //添加3
+    map3.put("Orving","篮网")
+    println(map3)
+
+
+    //如果没有这个元素，就先存进去，再取出来   //如果有key 就直接取出来
+    val  s = map3.getOrPut("约老师"){"掘金"}
+
+    println(s)
+
 
 
 }
